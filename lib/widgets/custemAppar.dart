@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noteapp/widget/CustemSearchIcon.dart';
+import 'package:newnoteapp/widgets/CustemSearchIcon.dart';
 
 class CustemAppar extends StatelessWidget {
   const CustemAppar({super.key, required this.title, required this.icon});
