@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:newnoteapp/widgets/custemAppar.dart';
 import 'package:newnoteapp/widgets/notesItemListView.dart';
 
-class NotesViewBody extends StatefulWidget {
+class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
 
-  @override
-  State<NotesViewBody> createState() => _NotesViewBodyState();
-}
-
-class _NotesViewBodyState extends State<NotesViewBody> {
   @override
   @override
   Widget build(BuildContext context) {
