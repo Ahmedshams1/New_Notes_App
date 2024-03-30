@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newnoteapp/widgets/costemBotten.dart';
 import 'package:newnoteapp/widgets/custemTextField.dart';
 
 class AddNoteForm extends StatefulWidget {
@@ -41,6 +42,16 @@ class _AddNoteFormState extends State<AddNoteForm> {
           ),
           SizedBox(
             height: 32,
+          ),
+          CostomButton(
+            onTap: () {
+              if (formkey.currentState!.validate()) {
+                formkey.currentState!.save();
+              } else {
+                autovalidateMode = AutovalidateMode.always;
+                setState(() {});
+              }
+            },
           ),
           SizedBox(
             height: 16,
