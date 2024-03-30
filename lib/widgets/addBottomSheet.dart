@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newnoteapp/widgets/costemBotten.dart';
 import 'package:newnoteapp/widgets/custemTextField.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
@@ -6,17 +7,29 @@ class AddNoteBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(),
-        CustemTextField(
-          hint: 'Title',
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(),
+            CustemTextField(
+              hint: 'Title',
+            ),
+            CustemTextField(
+              hint: 'contant',
+              maxline: 5,
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            CostomButton(),
+            SizedBox(
+              height: 16,
+            ),
+          ],
         ),
-        CustemTextField(
-          hint: 'contant',
-          maxline: 5,
-        ),
-      ],
+      ),
     );
   }
 }
