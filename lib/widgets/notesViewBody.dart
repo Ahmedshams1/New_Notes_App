@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newnoteapp/widgets/custemAppar.dart';
+import 'package:newnoteapp/widgets/notesItemListView.dart';
 
 class NotesViewBody extends StatefulWidget {
   const NotesViewBody({super.key});
@@ -23,6 +24,7 @@ class _NotesViewBodyState extends State<NotesViewBody> {
             title: 'Notes',
             icon: Icons.search,
           ),
+          Expanded(child: NotesListView()),
         ],
       ),
     );
